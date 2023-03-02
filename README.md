@@ -1,18 +1,32 @@
 # DIO Clone
 
-Clone da plataforma DIO desenvolvido no bootcamp Formação React Developer.
+Clone da plataforma DIO desenvolvido durante o bootcamp Formação React Developer.
 
 O projeto contém:
 
-- Página inicial;
-- Página de login;
-- Página de cadastro;
-- Feed inicial.
+- [Página inicial](#página-inicial);
+- [Página de login](#página-de-login);
+- [Página de cadastro](#página-de-cadastro);
+- [Feed inicial](#feed-inicial).
 
 ## Utilizado nesse projeto
 
 - **Styled Components** para a criação de componentes estilizados;
 - **React Icons** para detalhes visuais;
 - **React Router DOM** para a navegação entre páginas;
-- **React Hook** Form para validação de formulários;
+- **React Hook Form** para validação de formulários;
 - **Axios** e **JSON Server** para simulação de requisições a API.
+
+## Telas
+
+### Página inicial
+![Página inicial](https://user-images.githubusercontent.com/56568057/222293131-fe5eebe4-eb0e-4118-b667-740cf01c70e1.png)
+
+### Página de login
+![Página de login](https://user-images.githubusercontent.com/56568057/222293145-51ff711e-63a2-478c-bbde-42c414a26caf.png)
+
+### Página de cadastro
+![Página de cadastro](https://user-images.githubusercontent.com/56568057/222293156-08b3bad7-a598-49a9-88aa-ee30467e7289.png)
+
+### Feed inicial
+![Feed inicial](https://user-images.githubusercontent.com/56568057/222293169-8c55ab2f-0a7a-48c9-9f0e-1ea075167669.png)
