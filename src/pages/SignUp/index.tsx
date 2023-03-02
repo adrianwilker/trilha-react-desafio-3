@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { MdAccountCircle, MdEmail, MdLock } from 'react-icons/md'
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
+import { IFormData } from './types'
 
 const schema = yup.object({
   name: yup.string().required('Campo obrigatório.'),
@@ -18,7 +19,7 @@ const schema = yup.object({
 const SignUp = () => {
   const navigate = useNavigate()
 
-  const { control, handleSubmit, formState: { errors, isValid } } = useForm({
+  const { control, handleSubmit, formState: { errors } } = useForm<IFormData>({
     resolver: yupResolver(schema),
     mode: 'onChange'
   });

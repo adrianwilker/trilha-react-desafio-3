@@ -11,8 +11,9 @@ import {
 } from './styles'
 import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo-dio.png'
+import { IHeader } from './types'
 
-const Header = ({autenticado, ocultarBotoes}) => {
+const Header = ({autenticado, ocultarBotoes}: IHeader) => {
   const navigate = useNavigate()
   return(
     <Wrapper>
