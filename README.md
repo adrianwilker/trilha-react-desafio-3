@@ -20,13 +20,17 @@ O projeto contém:
 ## Telas
 
 ### Página inicial
+
 ![Página inicial](https://user-images.githubusercontent.com/56568057/222293131-fe5eebe4-eb0e-4118-b667-740cf01c70e1.png)
 
 ### Página de login
-![Página de login](https://user-images.githubusercontent.com/56568057/222293145-51ff711e-63a2-478c-bbde-42c414a26caf.png)
+
+![Página de login](https://user-images.githubusercontent.com/56568057/222295873-5c7e92f0-45d0-4a93-b5fe-c357b999b848.png)
 
 ### Página de cadastro
+
 ![Página de cadastro](https://user-images.githubusercontent.com/56568057/222293156-08b3bad7-a598-49a9-88aa-ee30467e7289.png)
 
 ### Feed inicial
+
 ![Feed inicial](https://user-images.githubusercontent.com/56568057/222293169-8c55ab2f-0a7a-48c9-9f0e-1ea075167669.png)

@@ -47,7 +47,7 @@ const Login = () => {
       <Column>
         <Divider />
         <Wrapper>
-          <TitleLogin>Faça seu cadastro</TitleLogin>
+          <TitleLogin>Faça seu login</TitleLogin>
           <SubTitleLogin>Faça seu login e make the change._</SubTitleLogin>
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="E-mail" aria-label="email" leftIcon={<MdEmail/>}/>
