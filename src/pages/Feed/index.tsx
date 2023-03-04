@@ -4,8 +4,9 @@ import { Card } from '../../components/Card'
 import { Container, Title, TitleHighlight, Column } from './styles'
 
 const Feed = () => {
+
   return (<>
-    <Header autenticado={true} />
+    <Header />
     <Container>
       <Column flex={3}>
         <Title>Feed</Title>

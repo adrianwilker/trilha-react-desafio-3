@@ -7,20 +7,26 @@ import {
   MenuRight,
   Row,
   Wrapper,
-  UserPicture
+  UserPicture,
+  UserInfo
 } from './styles'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo-dio.png'
 import { IHeader } from './types'
+import { useAuth } from '../../hooks/useAuth'
 
-const Header = ({autenticado, ocultarBotoes}: IHeader) => {
+const Header = ({ocultarBotoes}: IHeader) => {
   const navigate = useNavigate()
+  const { user, handleSignOut } = useAuth()
+  
   return(
     <Wrapper>
       <Container>
         <Row>
-          <img src={logo} alt="Logo da DIO"/>
-          {autenticado ? (
+          <Link to="/">
+            <img src={logo} alt="Logo da DIO"/>
+          </Link>
+          {user.id ? (
             <>
               <BuscarInputContainer>
                 <Input placeholder="Buscar..." aria-label="Buscar"/>
@@ -31,8 +37,16 @@ const Header = ({autenticado, ocultarBotoes}: IHeader) => {
           ) : null}
         </Row>
         <Row>
-          {autenticado ? (
-            <UserPicture src="https://picsum.photos/30" />
+          {user.id ? (
+            <>
+              <UserPicture src="https://picsum.photos/30" />
+              <UserInfo>
+                <p>{user.name}</p>
+                <Link to="/" onClick={handleSignOut}>
+                  <p>Sair</p>
+                </Link>
+              </UserInfo>
+            </>
           ) : (
             <>
               <MenuRight href="#" onClick={() => navigate('/')}>Home</MenuRight>

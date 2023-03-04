@@ -93,3 +93,21 @@ export const Input = styled.input`
   outline: none;
   font-size: 15px;
 `
+
+export const UserInfo = styled.div`
+  margin-left: 12px;
+
+  &> p {
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+
+    &:hover {
+      color: #e4105d;
+      transition: 0.3s;
+    }
+  }
+`
